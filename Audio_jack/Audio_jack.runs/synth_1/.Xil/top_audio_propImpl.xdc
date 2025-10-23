@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/sarat/vivado_programs/Audio_jack/Audio_jack.srcs/constrs_1/new/audio.xdc rfile:../../../Audio_jack.srcs/constrs_1/new/audio.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E3 [get_ports clk]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A11 [get_ports aud_pwm]
+set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D12 [get_ports aud_sd]

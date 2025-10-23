@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Sep 11 12:11:33 2025
+# Process ID: 4080
+# Current directory: C:/Verilog Labs/FPGA/Audio_jack/Audio_jack
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19400 C:\Verilog Labs\FPGA\Audio_jack\Audio_jack\Audio_jack.xpr
+# Log file: C:/Verilog Labs/FPGA/Audio_jack/Audio_jack/vivado.log
+# Journal file: C:/Verilog Labs/FPGA/Audio_jack/Audio_jack\vivado.jou
+# Running On        :ESWAR
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 5 5625U with Radeon Graphics         
+# CPU Frequency     :2296 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14877 MB
+# Swap memory       :5368 MB
+# Total Virtual     :20245 MB
+# Available Virtual :7288 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Verilog Labs/FPGA/Audio_jack/Audio_jack/Audio_jack.xpr}
+create_project Audio_Jack {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack} -part xc7a100tcsg324-1
+add_files -norecurse -scan_for_includes {{C:/Verilog Labs/FPGA/Audio_jack/rtl/top_audio.v}}
+add_files -fileset constrs_1 -norecurse {{C:/Verilog Labs/FPGA/Audio_jack/xdc/audio.xdc}}
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0
+set_property -dict [list \
+  CONFIG.Write_Depth_A {65536} \
+  CONFIG.Write_Width_A {8} \
+] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+generate_target all [get_files  {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+export_ip_user_files -of_objects [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files} -ipstatic_source_dir {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/modelsim} {questa=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/questa} {riviera=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/riviera} {activehdl=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_simulation
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Verilog Labs/FPGA/Audio_jack/sine_8s_65536.coe} \
+  CONFIG.Load_Init_File {true} \
+] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+export_ip_user_files -of_objects [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files} -ipstatic_source_dir {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/modelsim} {questa=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/questa} {riviera=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/riviera} {activehdl=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+set_property CONFIG.Write_Depth_A {131072} [get_ips blk_mem_gen_0]
+set_property CONFIG.Write_Width_A {8} [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+export_ip_user_files -of_objects [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{c:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files} -ipstatic_source_dir {C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/modelsim} {questa=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/questa} {riviera=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/riviera} {activehdl=C:/Verilog Labs/FPGA/Audio_jack/sim/Audio_Jack/Audio_Jack.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

@@ -1,0 +1,2 @@
+audio_bram.v,verilog,xil_defaultlib,../../../../Audio_jack.gen/sources_1/ip/audio_bram/sim/audio_bram.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
