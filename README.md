@@ -67,6 +67,7 @@ FPGA-Audio-Equalizer/
 * **Board**: Digilent Nexys 4 (Artix-7 XC7A100TCSG324-1)
 * **Audio Output**: 3.5mm audio jack connected to PWM output pin
 * **System Clock**: 100 MHz onboard clock divided to 44.1 kHz
+* **Tools Used**: Xilinx Vivado 2024.1, Matlab R2021a, VS Code
 
 ### Key Modules
 
