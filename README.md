@@ -99,7 +99,7 @@ FPGA-Audio-Equalizer/
     </td>
     <td align="center">
       <a href="https://github.com/SudaSarath66">
-        <img src="https://github.com/SudaSarath66" width="100px;" alt=""/>
+        <img src="https://github.com/SudaSarath66.png" width="100px;" alt=""/>
         <br /><sub><b>Sarath Kumar Suda</b></sub>
       </a>
     </td>
