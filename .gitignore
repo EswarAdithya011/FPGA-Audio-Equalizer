@@ -1,64 +1,29 @@
-# Project build directories
-.cache/
-.hw/
-.ip_user_files/
-.sim/
-.runs/
-.gen/
-.srcs/
-.xpr/
-.xsa/
-.webtalk/
-
-# Simulation files
-*.wdb
-*.vcd
-*.saif
+# Vivado build & cache files
 *.jou
 *.log
-*.str
 *.pb
 *.dcp
-*.bit
-*.bin
-*.tcl~
-*.backup*
-*.dbg
-*.tmp
-
-# Auto-generated constraint files
-*.xdc~
-
-# Board / synthesis metadata
-*.ltx
-*.ncd
-*.ngc
-*.ngd
-*.map
-*.mrp
-*.pcf
-*.bgn
-*.html
-*.xml
-*.xmsgs
-*.xise
-*.xpi
-*.syr
-*.twr
-*.twx
 *.rpt
-*.txt
-*.xls
-*.csv
-
-# OS junk
-.DS_Store
-Thumbs.db
-
-# IDE-specific
-.vscode/
-.idea/
-
-# Python or script caches
-__pycache__/
-*.pyc
+*.xdc
+*.xci
+*.xml
+*.vdi
+*.bit
+*.wdf
+*.rpx
+*.pb
+*.backup.*
+*.coe
+*.bmj
+*.mif
+*.tmp
+.Xil/
+*/.jobs/
+*/impl_1/
+*/synth_1/
+*.cache/
+*.runs/
+*.hw/
+*.ip_user_files/
+*.gen/
+vivado.*
