@@ -1,4 +1,4 @@
-# Digital Audio Playback System on FPGA
+# FPGA Audio Equalizer
 
 ## Abstract
 
